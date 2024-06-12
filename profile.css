@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  georgia;
+    cursor: pointer;
+    
+    
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+    overflow-y: scroll;
+}
+
+.head {
+    text-align: left;
+    color: rgb(0, 249, 207);
+    margin: 10px;
+    font-size: 70px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color: white;
+}
+nav li{
+    
+    display: inline-block;
+    margin: 0 15px;
+    font-size: x-large;
+    color: rgb(245, 245, 245);
+}
+
+.content {
+    color: rgb(228, 25, 25);
+    margin-bottom: 20px; /* Adjusted margin */
+    text-align: center; /* Center text */
+    font-size:20px;
+    margin-bottom: 50px;
+}
+.typing{
+    color: rgb(215, 210, 210);
+    margin-bottom: 20px; /* Adjusted margin */
+    text-align: center; /* Center text */
+    font-size: 45px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.img {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    display: block;
+}
+.img-c::after{
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid rgb(22, 149, 203);
+    border-left: 10px solid rgb(22, 149, 203);
+    left: 560px;
+    bottom: 115px;
+   
+}
+.img-c::before{
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid rgb(22, 149, 203);
+    border-right: 10px solid rgb(22, 149, 203);
+    right:  540px;
+    top: 360px;
+    
+    
+}
+
+#button{
+    font-size: 16px;
+    font-weight: 500px;
+    padding: 12px 35px;
+    color: white;
+    display: inline-block;
+    border-radius: 40px;
+    background: rgb(231, 131, 9);
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#button:hover{
+    transform: scale(1.05);
+}
+#butt{
+    font-size: 16px;
+    font-weight: 500px;
+    padding: 5px 10px;
+    color: white;
+    display: inline-block;
+    border-radius: 40px;
+    background: rgb(231, 131, 9);
+    transition: all 0.3s ease;
+
+}
+
+#butt:hover{
+    transform: scale(1.05);
+}
+.bt{
+    color: white;
+}
+/* Default margin for all screen sizes */
+.box {
+    margin: 20px;
+}
+
+
+
+
+
+#change-bg-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#change-bg-btn:hover {
+    background-color: #45a049;
+}
+/*home page over
+ about me started */
+ .about-sections {
+    padding: 100px 0; /* Adjust the padding as needed */
+}
+.section-title 
+{
+color: white;
+text-align: left;
+margin: 0 20px;
+}
+.about-content-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 20px;
+    color: red;
+}
+
+.about-sections .personal-info
+{
+    flex: 0,0,40%;
+    max-width: 400000%;
+  color: #1bd2e3;
+    padding: 3px;
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+.info-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr ; /* Two columns */
+    gap: 10px; /* Gap between grid items */
+   column-gap: 30px;
+   
+   
+}
+.info-item p {
+    margin: 100;
+}
+.pdf-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #c46506;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.pdf-button:hover {
+    background-color: #0056b3;
+}
+.about-sections .skills
+{
+    flex: 0,0,40%;
+    max-width: 40%;
+    color: #45a049;
+    padding: 3px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.about-sections .skills .skills-items
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+}
+.about-sections .skills .skills-items h5
+{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(73, 189, 15);
+    text-transform: capitalize;
+}
+.about-sections .skills .skills-items .progress
+{
+    background-color: #e8edf3;
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+.about-sections .skills .skills-items .progress .progress-bar
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: #0056b3;
+}
+.about-sections .skills .skills-items .skill-percent
+{
+    position: absolute;
+    right: 0;
+    color: #e8edf3;
+    top: -40px;
+    font-weight: 400;
+}  
+ .contanier
+ {
+    display: flex;
+  justify-content: space-between;
+ }
+.skills, .education
+{
+    width: 48%;
+}
+.education {
+    flex: 0,0,40%;
+    max-width: 40%;
+    color: #45a049;
+    background-color: #fafafa;
+    padding: 10px;
+    margin-top: 50px;
+    margin-right: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.school  {
+    color: black; /* Change the icon color to black */
+    margin-right: 50px; /* Add space between the icon and the text */
+    font-size: x-large;
+}
+.college{
+    color: black; /* Change the icon color to black */
+    margin-right: 50px; /* Add space between the icon and the text */
+    font-size: x-large;
+}
+.experience
+{
+color: #1bd2e3;
+margin-left: 30px;
+
+}
+.experience 
+{
+    
+    flex: 0,0,40%;
+    max-width: 40%;
+    color: #e0ab0b;
+    background-color: #1f12cd;
+    padding: 10px;
+    padding-right: 90px;
+    margin-top: 50px;
+    margin-right: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    
+}
+ .intern-button
+ {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #c46506;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 30px;
+ }
+ .intern-button:hover
+ {
+    background-color: #0056b3;
+ }
+
+ .contact-sections
+ {
+    color: white;
+    text-align: left;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); /* Adjust the minmax values as needed */
+    gap: 20px; /* Add space between the sections */
+}
+
+.thirdsection,
+.map-container {
+    width: 48%;
+}
+@media only screen and (max-width: 375px) {
+    /* Styles for screens up to 768px width */
+}
+
+@media only screen and (max-width: 667px) {
+    /* Styles for screens up to 480px width */
+}
